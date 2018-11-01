@@ -1,0 +1,354 @@
+@import "fonts";
+@import "libs";
+@import "vars";
+
+.intro-txt {
+	font-size: 4.8rem;
+	color: $red;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: $MontserratRegular;
+	border-top: 1px solid #aaa;
+	padding: 65px 0 100px 0;
+}
+.column-1, .column-2 {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+/*Portfolio blocks*/
+.main-content {
+	display: flex;
+	height: auto;
+	width: 100%;
+		.small-box, .medium-box, .big-box {
+		-webkit-background-size: cover;
+		overflow: hidden;
+		}
+	.small-box {
+		width: 50%;
+		height: 200px;
+}
+	.medium-box {
+		width: 100%;
+		height: 200px;
+
+}
+	.big-box {
+		width: 100%;
+		height: 460px;
+}
+
+}
+
+.emmamason {
+	background: url(../img/portfolio/emmamason.jpg);
+
+}
+.planet {
+	background: url(../img/portfolio/planet.jpg);
+}
+.fairaudio {
+	background: url(../img/portfolio/fair-audio.jpg);
+}
+.mossbros {
+	background: url(../img/portfolio/moss-bros.jpg);
+}
+.almar {
+	background: url(../img/portfolio/alamar.jpg);
+}
+.melissa {
+	background: url(../img/portfolio/meussa.jpg);
+}
+.rusel {
+	background: url(../img/portfolio/rusel-group.jpg);
+}
+.altnew {
+	background: url(../img/portfolio/altnew.png);
+}
+.dsfitnes {
+	background: url(../img/portfolio/df-store.jpg);
+}
+.fenell {
+	background: url(../img/portfolio/theo.jpg);
+}
+.drakes {
+	background: url(../img/portfolio/drakers.jpg);
+}
+.maison {
+	background: url(../img/portfolio/maison.png);
+}
+.ashan {
+	background: url(../img/portfolio/ashan.png);
+}
+.ajour {
+	background: url(../img/portfolio/ajour.jpg);
+}
+.louise {
+	background: url(../img/portfolio/lousse.png);
+}
+.formycon {
+	background: url(../img/portfolio/formycon.jpg);
+}
+.carvalho {
+	background: url(../img/portfolio/carvalho.jpg);
+}
+
+/*Boxes inner   logo & link*/
+
+/*Small Card*/
+.small-box > div{
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	margin: 0 auto;
+	text-align: center;
+
+	background: rgba(0,0,0,0.4);
+	.box-img{
+		display: block;
+		height: 60%;
+		width: 100%;
+		padding-top: 20%;
+		margin-bottom: 10px;
+
+	}
+	.box-img img{
+		height: 90%;
+
+
+	}
+	.link-box{
+		height: 25%;
+	}
+	a{
+		display: block;
+		max-width: 140px;
+		margin: 0 auto;
+		background: #747a87;
+		padding: 5px 20px;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-family: $MontserratRegular;
+		text-decoration: none;
+		width: auto;
+		transition: all 0.3s;
+		text-align: center;
+	}
+	a:hover{
+		background: rgba(0,0,0,0.3);
+	}
+
+}
+/*Medium Card*/
+.medium-box > div{
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	margin: 0 auto;
+	text-align: center;
+
+	background: rgba(0,0,0,0.4);
+	.box-img{
+		display: block;
+		height: 60%;
+		width: 100%;
+		padding-top: 50px;
+
+	}
+	.box-img img{
+		height: 80%;
+
+
+	}
+	.link-box{
+		height: 25%;
+	}
+	a{
+		display: block;
+		max-width: 180px;
+		margin: 0 auto;
+		background: #747a87;
+		padding: 7px 20px;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-family: $MontserratRegular;
+		text-decoration: none;
+		width: auto;
+		transition: all 0.3s;
+		text-align: center;
+	}
+	a:hover{
+		background: rgba(0,0,0,0.3);
+	}
+
+}
+/*Big Card*/
+.big-box > div{
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	margin: 0 auto;
+	text-align: center;
+
+	background: rgba(0,0,0,0.4);
+	.box-img{
+		display: block;
+		height: 60%;
+		width: 100%;
+		padding-top: 110px;
+
+	}
+	.box-img img{
+		height: 80%;
+	}
+	.link-box{
+		height: 25%;
+	}
+	a{
+		display: block;
+		max-width: 360px;
+		margin: 0 auto;
+		background: #747a87;
+		padding: 10px 10px;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 24px;
+		font-family: $MontserratRegular;
+		text-decoration: none;
+		width: auto;
+		transition: all 0.3s;
+		text-align: center;
+	}
+	a:hover{
+		background: rgba(0,0,0,0.3);
+	}
+
+}
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1300px) {
+
+}
+@media only screen and (max-width : 700px) {
+	.main-content {
+        flex-direction: column;
+    }
+	 .column-1, .column-2 {
+    	width: 100%;
+    }
+}
+    
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+	/**/
+
+@media only screen and (max-width : 1150px) {
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 850px) {
+
+
+}
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+
+}
+@media only screen and (max-width : 650px) {
+
+}
+
+@media only screen and (max-width : 580px) {
+
+    .main-content {
+        flex-direction: column;
+    }
+    .intro-txt{
+    	font-size: 2.4rem;
+    } 
+}
+
+@media only screen and (max-width : 480px) {
+
+
+}
+
+@media only screen and (max-width : 375px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
+
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+	/**/

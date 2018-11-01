@@ -1,0 +1,67 @@
+@import "vars";
+
+/* Montserrat-Regular */
+
+@font-face{
+    font-family: $MontserratRegular;
+    src: url('../fonts/Montserrat-Regular/Montserrat-Regular.woff') format('woff'),
+         url('../fonts/Montserrat-Regular/Montserrat-Regular.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Montserrat-Medium*/
+
+@font-face{
+    font-family: $MontserratMedium;
+    src: url('../fonts/Montserrat-Medium/Montserrat-Medium.woff') format('woff'),
+         url('../fonts/Montserrat-Medium/Montserrat-Medium.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Montserrat-Semibold */
+
+@font-face{
+    font-family: $MontserratSemibold;
+    src: url('../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff') format('woff'),
+         url('../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ACaslonPro-Regular */
+
+@font-face{
+    font-family: $ACaslonPro-Regular;
+    src: url('../fonts/ACaslonPro-Regular/ACaslonPro-Regular.woff') format('woff'),
+         url('../fonts/ACaslonPro-Regular/ACaslonPro-Regular.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* MinionProRegular */
+
+@font-face{
+    font-family: $MinionProRegular;
+    src: url('../fonts/MinionPro-Regular/MinionPro-Regular.woff') format('woff'),
+         url('../fonts/MinionPro-Regular/MinionPro-Regular.woff2'),
+         url('../fonts/MinionPro-Regular/MinionPro-Regular.ttf') format('truetype'), 
+         url('../fonts/MinionPro-Regular/MinionPro-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* FontAwesome for Icons */
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/FontAwesome/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/FontAwesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), 
+    url('../fonts/FontAwesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), 
+    url('../fonts/FontAwesome/fontawesome-webfont.woff?v=4.7.0') format('woff'), 
+    url('../fonts/FontAwesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), 
+    url('../fonts/FontAwesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,168 @@
+@import "fonts";
+@import "libs";
+@import "vars";
+
+.header-img{
+
+	width: 100%;
+	background: url('../img/outstaffing/outstaffing.jpg');
+	.transparent-block{
+		background: rgba(0,0,0,0.5);
+		height: 100%;
+		width: 100%;
+		display: flex;
+		h1 {
+			margin: auto;
+			color: #fff;
+			font-family: $MontserratSemibold;
+			font-size: 60px;
+			text-transform: uppercase;
+			padding: 10% 0;
+
+		}
+	}
+}
+.main-text{
+	font-family: $MinionProRegular;
+	font-size: 36px;
+	max-width: 1170px;
+	margin: auto;
+	p:first-child{
+		font-weight: 600;
+		padding-bottom: 20px;
+		padding-top: 90px;
+	}
+	ul{
+		margin-top: 70px;
+		li{
+			padding-bottom: 25px;
+			font-weight: bold;
+		}
+	}
+	i.fa{
+		color: $red;
+		margin-right: 45px;
+		font-weight: 200;
+	}
+}
+
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1300px) {
+
+}
+@media only screen and (max-width : 700px) {
+	.main-content {
+        flex-direction: column;
+    }
+	 .column-1, .column-2 {
+    	width: 100%;
+    }
+}
+    
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+	/**/
+
+@media only screen and (max-width : 1150px) {
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 850px) {
+
+
+}
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+
+}
+@media only screen and (max-width : 650px) {
+
+}
+
+@media only screen and (max-width : 580px) {
+
+    .main-content {
+        flex-direction: column;
+    }
+    .intro-txt{
+    	font-size: 2.4rem;
+    } 
+}
+
+@media only screen and (max-width : 480px) {
+
+
+}
+
+@media only screen and (max-width : 375px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
+
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+	/**/
