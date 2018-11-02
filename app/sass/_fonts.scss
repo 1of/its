@@ -40,6 +40,16 @@
     font-style: normal;
 }
 
+/* ACaslonPro-Semibold */
+
+@font-face{
+    font-family: $ACaslonProSemibold;
+    src: url('../fonts/ACaslonPro-Semibold/ACaslonPro-Semibold.woff') format('woff'),
+         url('../fonts/ACaslonPro-Regular/ACaslonPro-Semibold.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* MinionProRegular */
 
 @font-face{

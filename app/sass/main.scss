@@ -86,6 +86,12 @@ textarea:focus {
     padding: 0 0 95px 0;
     margin-top: 95px;
 }
+.bolder-txt{
+    font-weight: 600;
+}
+.centered-txt{
+    text-align: center;
+}
 
 /* HEADER */
 
@@ -529,7 +535,7 @@ textarea:focus {
 .contact-us {
 
     .heading {
-        padding: 50px 0;
+        padding: 0 0 50px 0;
         text-align: left;
     }
 }
@@ -545,7 +551,6 @@ textarea:focus {
     align-items: center;
     position: relative;
     padding: 10% 0;
-    margin-bottom: 50px;
 
     &::before {
         background: rgba(0, 0, 0, .3);
@@ -579,6 +584,11 @@ textarea:focus {
 
     p:last-of-type {
         margin-bottom: 50px;
+    }
+    iframe{
+        -webkit-box-shadow: 0px 0px 18px -3px rgba(148,148,148,1);
+        -moz-box-shadow: 0px 0px 18px -3px rgba(148,148,148,1);
+        box-shadow: 0px 0px 18px -3px rgba(148,148,148,1);
     }
 }
 

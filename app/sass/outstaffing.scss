@@ -3,9 +3,7 @@
 @import "vars";
 
 .header-img{
-
 	width: 100%;
-	background: url('../img/outstaffing/outstaffing.jpg');
 	.transparent-block{
 		background: rgba(0,0,0,0.5);
 		height: 100%;
@@ -18,25 +16,81 @@
 			font-size: 60px;
 			text-transform: uppercase;
 			padding: 10% 0;
+			text-align: center;
 
 		}
 	}
 }
+.outstuf-photo{
+		background: url('../img/outstaffing/outstaffing.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+.support-photo{
+		background: url('../img/services/magento_support.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+.migration-photo{
+		background: url('../img/services/magento_migration.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+.hosting-photo{
+		background: url('../img/services/magento_hosting.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+.extention-dev-photo{
+		background: url('../img/services/magento_extension_dev.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+.development-photo{
+		background: url('../img/services/magento_development.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center;
+	}
+.desighn-photo{
+		background: url('../img/services/magento_design.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center;
+	}
+.vacansy-photo{
+		background: url('../img/vacansy.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center;
+	}
 .main-text{
-	font-family: $MinionProRegular;
-	font-size: 36px;
+	font-family: $ACaslonPro-Regular;
+	font-size: 28px;
 	max-width: 1170px;
 	margin: auto;
-	p:first-child{
-		font-weight: 600;
-		padding-bottom: 20px;
+	p:first-child{	
+		padding-bottom: 40px;
+		line-height: 46px;
+	}
+	p.accent{
 		padding-top: 90px;
+		font-family: $ACaslonProSemibold;
+	}
+	p.accent-0{
+		padding-top: 10px;
+		font-family: $ACaslonProSemibold;
+	}
+	p:not(:first-child){
+		padding-bottom: 40px;
+		line-height: 46px;
 	}
 	ul{
-		margin-top: 70px;
+		margin: 30px 0;
 		li{
 			padding-bottom: 25px;
 			font-weight: bold;
+			font-family: $ACaslonProSemibold;
 		}
 	}
 	i.fa{
@@ -44,8 +98,179 @@
 		margin-right: 45px;
 		font-weight: 200;
 	}
+	h2{
+		font-size: 36px;
+		text-transform: uppercase;
+		padding-left: 80px;
+		color: $red;
+		font-family: $MontserratRegular;
+		&:first-child{
+			margin-top: 50px;
+		}
+	}
+	h2.centered-txt{
+		padding-left: 0;
+		padding-bottom: 50px;
+	}
+	.hosting-list li{
+		display: flex;
+		i.fa{
+			font-size: 3rem;
+			padding-top: 5px;
+		}
+		p{
+			font-weight: normal;
+		}
+	}
+	.hosting-list li span{
+		display: block;
+		font-weight: bold;
+	}
+	a{
+		text-decoration: none;
+		color: $orange;
+	}
+	li.dev-list {
+		text-transform: uppercase;
+		i.fa{
+			margin-right: 15px;
+		}
+	}
 }
 
+/*SHOW & HIDE Vacansy description*/
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    cursor: pointer;
+    display: inline-block; 
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: #fff;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(255,255,255,0.9);
+    left: 0;
+    right: 0;
+    padding: 10% 25%; 
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(255, 255, 255,0.9) 10%, rgba(255,255,255,0.8) 80%), url('../img/vacansy.jpg');
+}
+i.fa-close{
+	font-size: 3.5rem;
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	color: $orange;
+	&:hover{
+		color: $red;
+	}
+}
+.vacansy-items-wrap li:hover{
+	height: 299px;
+
+}
+.services-block{
+	position: relative;
+}
+/* ======== Carrier ========= */
+.vacansy-items-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-top: 40px;
+    height: auto;
+
+    li {
+        width: 356px;
+        height: 300px;
+        overflow: hidden;
+        padding: 20px 25px;
+        text-align: center;
+        margin-bottom: 20px;
+        background: #fff;
+        transition: all 0.3s;
+        &:hover{
+        	-webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
+		-moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
+		box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
+
+        }
+
+        & > a {
+            color: $gray-solid;
+            font-size: 14px;
+            text-decoration: none;
+            font-family: $MontserratSemibold;
+            text-transform: uppercase;
+            color: #fff;
+            background: $orange;
+            padding: 7px 27px;
+            &:hover{
+            	background: $red;
+            }
+        }
+    }
+
+    .vacansy-photo {
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+    .vacansy-header{
+    	height: 70px;
+    	display: flex;
+    	text-align: left;
+    	span{
+    		text-align: left;
+    	}
+    	.vacansy-name{
+    		padding-top: 20px;
+    		margin-left: 20px;
+    		font-family: $MontserratSemibold;
+    		font-size: 18px;
+    	}
+    }
+    .vacansy-description{
+    	height: 150px;
+    	margin-top: 10px;
+    	overflow: hidden;
+    	text-align: left;
+    	label{
+        color: $gray-solid;
+        font: 14px $MontserratRegular;
+    	}
+    }
+
+    .item1 {
+    	background: url('../img/magento.svg');
+		background-size: 80px 70px;
+    	height: 70px;
+    	width: 80px;
+    }
+
+    .item2 {
+    	background: url('../img/java_cup.svg');
+		background-size: 80px 70px;
+    	background-position: center;
+        width: 80px;
+        height: 70px;
+    }
+}
 
 /*==========  Desktop First  ==========*/
 
