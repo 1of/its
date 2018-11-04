@@ -1,0 +1,256 @@
+@import "vars";
+@import "fonts";
+.header-block{
+  height: 100px;
+  display: flex;
+  position: relative;
+  z-index: 1000;
+  background: #fff;
+  .logo{
+    display: inline-block;
+    width: 20%;
+    margin: auto;
+    padding-left: 20px;
+  }
+  #menu{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: auto;
+    z-index: 1000;
+  }
+}
+
+/*FIX MENU to HEADER*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 58px;
+}
+
+a.menu-link {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
+
+.menu-link span {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin-right: 25px;
+  & i.fa{
+    margin: auto;
+    font-size: 2.4em;
+    &:hover{
+      color: $red;
+    }
+  }
+}
+
+
+.menu-link:hover span { border-color: #666; }
+
+.menu, .menu > ul, .menu > ul ul {
+  clear: both;
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  width: 80%;
+}
+
+.menu.active {
+  background: #f9f9f9;
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+  margin: 1em 0 1em -12px;
+  max-height: 55em;
+  width: 100vw;
+}
+
+.js .menu > ul ul.active {
+  margin: 0;
+  max-height: 55em;
+  padding: 0;
+}
+
+.menu > ul { padding: 0; }
+
+nav li {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+}
+
+.menu li a {
+  color: #000;
+  display: inline-block;
+  font-size: 18px;
+  font-family: $MontserratRegular;
+  line-height: 2.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  transition: all 0.5s;
+  &:hover{
+    color: $red;
+    text-shadow: 0px 0px 16px rgba(241, 159, 147, 1);
+  }
+
+}
+
+
+
+span.has-subnav {
+  display: block;
+  border-left: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  position: absolute;
+  right: 0px;
+  height: 45px;
+  width: 20%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+}
+.rotate{
+  transform: rotate(45deg); 
+}
+
+
+/*Phones*/
+ @media screen and (max-width:1000px) {
+
+.header-block #menu{
+  position: absolute;
+  width: 100%;
+  top: 100px;
+}
+.header-block .logo{
+  margin: 24px 10px;
+}
+.menu,  .menu > ul ul {
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+.menu>ul {
+  width: 100%;
+
+}
+.menu li a {
+
+  padding-left: 15px;
+  width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+.menu li li a { padding-left: 50px; }
+
+.menu li:last-child a { border: none; }
+
+.menu li li:last-child a { border-bottom: 1px solid #d8d8d8; }
+
+}
+
+
+/*big screen devices*/
+@media screen and (min-width: 1001px) {
+
+.menu{
+  
+  justify-content: space-between;
+}
+a.menu-link { display: none; }
+
+.js .menu,  .js .menu > ul ul {
+  max-height: none;
+  overflow: visible;
+}
+
+.js .menu > ul li:hover > ul { display: flex; }
+
+.menu ul {
+  display: flex;
+  flex-flow: row;
+  height: 45px;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.menu span.has-subnav { display: none; }
+
+.menu li a:hover { color: $red; }
+
+.menu li li a:hover {
+  color: $red;
+}
+
+.menu ul ul {
+  background: #fff;
+
+  border-radius: 2px 2px 5px 5px;
+  border-top: solid 5px transparent;
+  display: none;
+  height: auto;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-align: left;
+  top: 43px;
+  width: 150px;
+  z-index: 999;
+}
+.menu ul ul:before{
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-top: 1px solid $orange;
+  border-left: 1px solid $orange;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  z-index: 50;
+}
+.menu ul ul li{
+  border-left: 1px solid $orange;
+  border-right: 1px solid $orange;
+  border-bottom: 1px solid $orange;
+}
+.menu ul ul li:first-child{
+      border-radius: 4px 4px 0px 0px;
+      margin-top: 8px;
+      border-top: 1px solid $orange;
+}
+.chrome .js .menu > ul ul { top: 43px; }
+
+.menu ul ul.wide { width: 300px; }
+
+.menu ul ul li {
+  border-bottom: solid 1px $orange;
+  display: inline-block;
+  position: relative;
+}
+
+/*.menu > ul ul li:last-child { border-bottom: none; } */
+
+.menu ul ul li a {
+  display: block;
+  padding-left: 10px;
+}
+}

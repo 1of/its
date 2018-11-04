@@ -19,6 +19,9 @@
 		<meta name="msapplication-navbutton-color" content="#000">
 		<!-- iOS Safari -->
 		<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/portfolio.min.css">
+		<link rel="stylesheet" href="css/toggle-nav-header.min.css">
 	</head>
 	<body>
 		<div class="portfolio-page">
@@ -30,19 +33,32 @@
 							<p><span>phone : </span><a href="tel:+3801111111">+38011 11 11 11</a></p>
 						</div>
 					</div>
-					<div class="header-content commonStyle">
-						<a href="index.html"><img src="img/logo.png" alt="Intechsoft"></a>
-						<div class="btn-mob-wrap"><button class="btn-menu-mob"><img src="img/menu-mob-icon.png" alt="mob-menu"></button></div>
-						<nav class="main-menu">
-							<ul>
-								<li><a href="services.html">services</a></li>
+					<!-- HEADER responce-->
+					<div class="header-block" id="heading">
+						<div class="logo">
+							<a href="index.html"><img src="img/logo.png" alt="Intechsoft"></a>
+							<a href="#menu" class="menu-link active"><span> <i class="fa fa-bars"></i> </span></a>
+						</div>
+						<nav id="menu" class="menu">
+							<ul class="level-1">
+								<li><a href="services.html">services</a><span class="has-subnav"> <i class="fa fa-sort-down">	</i> </span>
+									<ul class="wide level-2">
+										<li class="sub-lvl-2"><a href="magento_design.html">design</a></li>
+										<li class="sub-lvl-2"><a href="magento_development.html">development</a></li>
+										<li class="sub-lvl-2"><a href="magento_extension_dev.html">extension development</a></li>
+										<li class="sub-lvl-2"><a href="magento_hosting.html">hosting</a></li>
+										<li class="sub-lvl-2"><a href="magento-migration.html">migration</a></li>
+									</ul>
+								</li>
 								<li class="active"><a href="portfolio.html">portfolio</a></li>
 								<li><a href="carrier.html">carrier</a></li>
 								<li><a href="outstaffing.html">outstaffing</a></li>
 								<li><a href="contact-us.html">contact us</a></li>
+								<li><a href="about.html">about us</a></li>
 							</ul>
 						</nav>
 					</div>
+					<!-- END HEADER responce-->
 				</header>
 				<main>
 					<h1 class="intro-txt">Our portfolio</h1>
@@ -50,7 +66,7 @@
 					   <div class="column-1">
 						   <div class="small-box emmamason">
 							   	<div>
-							   		<div class="box-img"><img src="img/portfolio/emmamason-logo.png" alt=""></div>
+							   		<div class="box-img"> <img src="img/portfolio/emmamason-logo.png"> </div>
 							   		<div class="link-box">
 							   		<a href="#">view website</a> 
 							   		</div>
@@ -58,7 +74,7 @@
 						   </div>
 						   <div class="small-box planet">
 							   	<div>
-							   		<div class="box-img"><img src="img/portfolio/planet-logo.png" alt=""></div>
+							   		<div class="box-img"> <img src="img/portfolio/planet-logo.png"> </div>
 							   		<div class="link-box">
 							   		<a href="#">view website</a> 
 							   		</div>
@@ -190,22 +206,25 @@
 					   </div>
 					</section>
 				</main>
-				<footer class="footer commonStyle">
-					<div class="footer-logo-wrap">
-						<a href="index.html"><img src="img/logo-bigger.png" alt="Intechsoft"></a>
+			<footer class="footer commonStyle">
+				<div class="wrapper footer-logo-wrap">
+					<a href="index.html"><img src="img/logo-bigger.png" alt="Intechsoft"></a>
+					<div class="social-link">
+						<a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+						<a href="" class="linkedin"><i class="fa fa-linkedin"></i></a>
+						<a href="" class="telegram"><i class="fa fa-telegram"></i></a>
 					</div>
-					<div class="legal-footer">
-						<p>&#169; copyright 2018 intechsoft // privacy policy // terms and conditions</p>
-					</div>
-				</footer>
+				</div>
+				<div class="legal-footer">
+					<p>&#169; copyright 2018 intechsoft // privacy policy // terms and conditions</p>
+				</div>
+			</footer>
 		</div>
-	</div>
-		<link rel="stylesheet" href="css/portfolio.min.css">
-		<link rel="stylesheet" href="css/main.min.css">
-
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 		<script src="js/scripts.min.js"></script>
+		<script src="js/toggle-nav.js"></script>
 	</body>
 </html>

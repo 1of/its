@@ -166,6 +166,8 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 
+
+
     .wrapper {
         display: block;
         width: auto;
@@ -216,6 +218,13 @@
         .slick-next {
             right: 2%;
         }
+        .slick-slide img{
+            height: 55vh !important;
+        }
+
+    }
+    .slider-container{
+        height: 55vh !important;
     }
 
     .main-menu {
@@ -346,6 +355,10 @@
         width: 40px;
         height: 40px;
     }
+    .social-link{
+        margin-top: 50px;
+    justify-content: center;
+}
 
     .bg-facebook {
         background-position: -9px -130px;
@@ -390,6 +403,9 @@
     }
 }
 @media only screen and (max-width : 650px) {
+
+
+
 
     .addresses {
         flex-direction: column;

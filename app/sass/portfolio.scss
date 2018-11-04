@@ -32,23 +32,22 @@
 		}
 	.small-box {
 		width: 50%;
-		height: 200px;
+		min-height: 200px;
 }
 	.medium-box {
 		width: 100%;
-		height: 200px;
+		min-height: 200px;
 
 }
 	.big-box {
 		width: 100%;
-		height: 460px;
+		min-height: 460px;
 }
 
 }
 
 .emmamason {
 	background: url(../img/portfolio/emmamason.jpg);
-
 }
 .planet {
 	background: url(../img/portfolio/planet.jpg);
@@ -112,17 +111,25 @@
 	background: rgba(0,0,0,0.4);
 	.box-img{
 		display: block;
-		height: 60%;
+		height: 70%;
+		width: 60%;
+		padding-top: 10%;
+		margin: auto;
+		position: relative;
+	}
+	.box-img > div {
+		display: block;
 		width: 100%;
-		padding-top: 20%;
-		margin-bottom: 10px;
-
+		height: 100%;
+		margin: auto;
+		background: url(../img/portfolio/emmamason-logo.png);
+		background-repeat: no-repeat;
+		background-size: 50%;
 	}
 	.box-img img{
-		height: 90%;
-
-
-	}
+		max-width: 70%;
+		max-height: 90%;
+			}
 	.link-box{
 		height: 25%;
 	}
@@ -245,6 +252,9 @@
 	 .column-1, .column-2 {
     	width: 100%;
     }
+    .main-content .small-box{
+	width: 100%;
+}
 }
     
 

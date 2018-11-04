@@ -284,6 +284,7 @@ i.fa-close{
 	 .column-1, .column-2 {
     	width: 100%;
     }
+
 }
     
 
@@ -314,7 +315,13 @@ i.fa-close{
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-
+	.header-img{
+		overflow: hidden;
+	}
+	.header-img .transparent-block h1 {
+		font-size: 40px;
+		padding: 20% 10%;
+	}
 
 }
 @media only screen and (max-width : 650px) {
