@@ -16,7 +16,7 @@
     display: flex;
     width: 80%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     flex-wrap: nowrap;
     margin: auto;
     z-index: 1000;
@@ -39,7 +39,7 @@ a.menu-link {
   display: block;
   text-decoration: none;
   position: absolute;
-  right: 0;
+  right: 25px;
   top: 25px;
 }
 
@@ -47,12 +47,10 @@ a.menu-link {
   display: flex;
   height: 50px;
   width: 50px;
-  margin-right: 25px;
   & i.fa{
     margin: auto;
     font-size: 2.4em;
     &:hover{
-      color: $red;
     }
   }
 }
@@ -90,6 +88,10 @@ nav li {
   margin: 0;
   position: relative;
 }
+nav > ul > li{
+  margin-right: 4%;
+}
+
 
 .menu li a {
   color: #000;
@@ -103,7 +105,7 @@ nav li {
   transition: all 0.5s;
   &:hover{
     color: $red;
-    text-shadow: 0px 0px 16px rgba(241, 159, 147, 1);
+
   }
 
 }
@@ -150,12 +152,12 @@ span.has-subnav {
 }
 .menu li a {
 
-  padding-left: 15px;
+  padding-left: 40px;
   width: 100%;
     border-bottom: 1px solid lightgray;
 }
 
-.menu li li a { padding-left: 50px; }
+.menu li li a { padding-left: 70px; font-size: 16px; }
 
 .menu li:last-child a { border: none; }
 
@@ -184,7 +186,7 @@ a.menu-link { display: none; }
   display: flex;
   flex-flow: row;
   height: 45px;
-  justify-content: space-around;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   width: 100%;

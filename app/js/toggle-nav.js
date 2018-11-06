@@ -34,13 +34,29 @@ window.onscroll = function() {myFunction()};
 
 var header = document.getElementById('heading');
 var sticky = header.offsetTop;
-  	console.log(header);
-function myFunction() {
-  if (window.pageYOffset > sticky) {
 
+function myFunction() {
+	scrollFunc();
+  if (window.pageYOffset > sticky) {
 
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
   }
 }
+
+
+//Button back 
+var scrollFunc = function scrollFunction() {
+    if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+        document.getElementById("topBtn").style.display = "block";
+    } else {
+        document.getElementById("topBtn").style.display = "none";
+    }
+};
+
+// When the user clicks on the button, scroll to the top of the document	 
+	$("#topBtn").on('click', function() {
+      var top = $('head').offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+	});

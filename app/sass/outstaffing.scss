@@ -66,12 +66,12 @@
 	}
 .main-text{
 	font-family: $ACaslonPro-Regular;
-	font-size: 28px;
+	font-size: 21px;
 	max-width: 1170px;
 	margin: auto;
 	p:first-child{	
-		padding-bottom: 40px;
-		line-height: 46px;
+		padding-bottom: 20px;
+		line-height: 1.2;
 	}
 	p.accent{
 		padding-top: 90px;
@@ -81,14 +81,18 @@
 		padding-top: 10px;
 		font-family: $ACaslonProSemibold;
 	}
+	p.accent-support{
+		padding-top: 70px;
+		font-family: $ACaslonPro-Regular;
+	}
 	p:not(:first-child){
 		padding-bottom: 40px;
-		line-height: 46px;
+		line-height: 1.2;
 	}
 	ul{
-		margin: 30px 0;
+		margin: 20px 0;
 		li{
-			padding-bottom: 25px;
+			padding-bottom: 15px;
 			font-weight: bold;
 			font-family: $ACaslonProSemibold;
 		}
@@ -99,9 +103,9 @@
 		font-weight: 200;
 	}
 	h2{
-		font-size: 36px;
-		text-transform: uppercase;
+		font-size: 24px;
 		padding-left: 80px;
+		text-align: left;
 		color: $red;
 		font-family: $MontserratRegular;
 		&:first-child{
@@ -124,14 +128,14 @@
 	}
 	.hosting-list li span{
 		display: block;
-		font-weight: bold;
+		text-shadow: 1px 1px #000;
+		font-size: 22px;
 	}
 	a{
 		text-decoration: none;
 		color: $orange;
 	}
 	li.dev-list {
-		text-transform: uppercase;
 		i.fa{
 			margin-right: 15px;
 		}
@@ -160,13 +164,14 @@
     display: block;
     position: fixed;
     width: 100%;
+    margin-top: 10vh;
     height: 100%;
     top: 0;
     background: rgba(255,255,255,0.9);
     left: 0;
     right: 0;
     padding: 10% 25%; 
-    z-index: 2;
+    z-index: 2000;
     background: linear-gradient(180deg, rgba(255, 255, 255,0.9) 10%, rgba(255,255,255,0.8) 80%), url('../img/vacansy.jpg');
 }
 i.fa-close{
@@ -174,9 +179,8 @@ i.fa-close{
 	position: absolute;
 	right: 5%;
 	top: 5%;
-	color: $orange;
 	&:hover{
-		color: $red;
+
 	}
 }
 .vacansy-items-wrap li:hover{
@@ -194,6 +198,7 @@ i.fa-close{
     flex-wrap: wrap;
     margin-top: 80px;
     padding-top: 40px;
+    padding-bottom: 40px;
     height: auto;
 
     li {
@@ -257,10 +262,11 @@ i.fa-close{
     }
 
     .item1 {
-    	background: url('../img/magento.svg');
-		background-size: 80px 70px;
-    	height: 70px;
-    	width: 80px;
+    	background: url('../img/net-logo-png-4.png');
+		background-size: 65px 60px;
+    	height: 60px;
+    	background-position: center;
+    	width: 85px;
     }
 
     .item2 {
@@ -269,6 +275,16 @@ i.fa-close{
     	background-position: center;
         width: 80px;
         height: 70px;
+    }
+    .item3 {
+    	background: url('../img/magento.svg');
+		background-size: 80px 70px;
+    	background-position: center;
+        width: 80px;
+        height: 70px;
+    }
+    .temporary-text{
+    	text-align: center;
     }
 }
 

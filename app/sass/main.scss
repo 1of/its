@@ -80,9 +80,8 @@ textarea:focus {
 
 .heading {
     color: $red;
-    font-size: 32px;
-    text-align: center;
-    text-transform: uppercase;
+    font-size: 24px;
+    text-align: left;
     padding: 0 0 95px 0;
     margin-top: 95px;
 }
@@ -90,7 +89,7 @@ textarea:focus {
     font-weight: 600;
 }
 .centered-txt{
-    text-align: center;
+    text-align: center !important;
 }
 
 /* HEADER */
@@ -102,22 +101,43 @@ textarea:focus {
 .top-header-content {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding: 10px 0;
 
-    & p * {
-        color: $colorWhite;
-        font: 18px/0.9px $MontserratSemibold;
-        text-transform: uppercase;
+    padding: 10px 0;
+    p {
+        display: inline-block;
+        margin-right: 2%;
+    }
+    & p.skype{
+        & i.fa{
+            color: #fff;
+            font-size: 21px;
+        }        
+    }
+
+    & p.email, p.phone {
+
+        display: inline-block;
+        span{
+            color: $colorWhite;
+            font: 18px $MontserratSemibold;
+            text-transform: uppercase;
+        }
+
     }
 
     & a {
         text-decoration: none;
+        font: 18px $MontserratSemibold;
+        text-transform: uppercase;
+        color: $colorWhite;
+        transition: all 0.4s;
+        &:hover{
+            color: $red;
+        }
     }
 
     & p:last-child {
-        margin-left: 5%;
-        margin-right: 1%;
+
     }
 }
 
@@ -139,7 +159,7 @@ textarea:focus {
 
 .main-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     flex: 5;
     width: 100%;
@@ -196,10 +216,20 @@ textarea:focus {
 .slider-container {
     max-width: 100%;
     position: relative;
-    height: 85vh;
-}
+    height: 40vh;
+    overflow: hidden;
 
+}
+.slick-track{
+    height: 40vh;
+
+}
 .slider-wrap {
+    height: 40vh;
+
+    div.slide_1, .div.slide_2{
+        height: 40vh;
+    }
 
     .slick-arrow {
         background: $black2;
@@ -254,16 +284,82 @@ textarea:focus {
 
     .slick-slide img {
         width: 100%;
-        height: 85vh;
+        height: 40vh;
     }
 }
+div.slide > div{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: 0 20%;
+    background-repeat: no-repeat;
 
+}
+.slide_1{
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.43) 0%, rgba(0,0,0,0.43) 0%), url('../img/team_slide.jpg'); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 0%,rgba(0,0,0,0.43) 0%), url('../img/team_slide.jpg'); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 0%,rgba(0,0,0,0.43) 0%), url('../img/team_slide.jpg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+.slide_2{
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.43) 0%, rgba(0,0,0,0.43) 0%), url('../img/slide_1.jpg'); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 0%,rgba(0,0,0,0.43) 0%), url('../img/slide_1.jpg'); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 0%,rgba(0,0,0,0.43) 0%,rgba(0,0,0,0.43) 0%), url('../img/slide_1.jpg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.slide{
+
+    position: relative;
+}
+.transpaent-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 45vh;
+
+}
+
+.slider-text-box{
+    padding-top: 5%;
+    padding-left: 25%;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    p{
+        color: #fff;
+        font-size: 35px;
+    }
+    .slider-logos{
+        width: 250px;
+        height: 230px;
+        background: url('../img/projection.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-left: 10%;
+        img{
+            height: auto;
+        }
+    }
+    .slider-logos_2{
+        width: 300px;
+        height: 180px;
+        background: url('../img/certs.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+        margin-left: 10%;
+                img{
+            
+        }
+    }
+}
 /* DEVELOPMENT SECTION */
 
 .development-wrap {
 
     & > p {
-        font: 24px/1.5 $ACaslonPro-Regular;
+        font: 21px/1.2 $ACaslonPro-Regular;
         margin-bottom: 30px;
         text-indent: 35px;
     }
@@ -272,6 +368,7 @@ textarea:focus {
     display: flex;
     margin: 0 auto;
     background: #bbb9b9;
+    padding: 20px 0 0 0;
 }
 
 .dev-items-wrap {
@@ -288,11 +385,24 @@ textarea:focus {
         margin-bottom: 20px;
         background: #fff;
         border-bottom: 5px solid $orange;
+        &:hover{
+                        -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.4);
+        -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.4);
+        box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.4);
+        }
 
         & > a {
             color: $gray-solid;
-            font-size: 16px;
+            font-size: 14px;
             text-decoration: none;
+            font-family: $MontserratSemibold;
+            text-transform: uppercase;
+            color: #fff;
+            background: $orange;
+            padding: 7px 27px;
+            &:hover{
+                background: $red;
+            }
         }
     }
 
@@ -342,12 +452,13 @@ textarea:focus {
         justify-content: center;
         align-items: center;
         min-height: 50px;
-        text-transform: uppercase;
+        text-transform: capitalize;
         margin: 15px 0 10px;
 
         & + p {
-            font: 24px $ACaslonPro-Regular;
+            font: 18px $ACaslonPro-Regular;
             margin-bottom: 30px;
+            overflow: hidden;
         }
     }
 
@@ -454,7 +565,7 @@ textarea:focus {
     background-size: cover;
     height: 628px;
     position: relative;
-    padding: 50px 0 35px;
+    padding: 50px 5%;
 
     &::before {
         background: $black-opacity;
@@ -485,18 +596,24 @@ textarea:focus {
     & span:last-of-type {
         left: 22%;
     }
+    > div{
+        display: flex;
+        justify-content: space-around;
+        
+        div{
+            width: 50%;
+        }
+    }
 }
 
 .tab-link {
     color: $white2;
     display: inline-block;
-    font-size: 24px;
-    position: absolute;
-    top: 0;
-    text-align: left;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
     text-transform: uppercase;
     transition: color .2s;
-    cursor: pointer;
 }
 
 .target-link {
@@ -508,13 +625,16 @@ textarea:focus {
 }
 
 .tab-content {
-    display: none;
     padding-top: 125px;
 
-    & h3,
-    & p {
+    & h3 {
         color: $colorWhite;
         font: 30px $MontserratSemibold;
+        text-transform: uppercase;
+    }
+    & p {
+        color: $colorWhite;
+        font: 22px $MontserratSemibold;
         text-transform: uppercase;
     }
 
@@ -585,7 +705,7 @@ textarea:focus {
 
 .addresses {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
 
     p {
@@ -601,6 +721,12 @@ textarea:focus {
         -webkit-box-shadow: 0px 0px 18px -3px rgba(148,148,148,1);
         -moz-box-shadow: 0px 0px 18px -3px rgba(148,148,148,1);
         box-shadow: 0px 0px 18px -3px rgba(148,148,148,1);
+    }
+    section{
+        width: 50%;
+        iframe{
+            width: 80%;
+        }
     }
 }
 
@@ -719,6 +845,7 @@ textarea:focus {
 
     a {
         display: inline-block;
+        width: 30%;
     }
 }
 
@@ -732,45 +859,69 @@ textarea:focus {
 .social-link{       
      display: flex;
      align-items: center;
+     margin-right: 30%;
 
-        a.facebook, a.linkedin, a.twitter {
+        a.facebook, a.linkedin, a.twitter, a.instagram, a.telegram, a.dou {
         display: flex;
         margin: 0 auto;
-        width: 30px;
-        height: 30px;
+        width: 55px;
+        height: 55px;
         border-radius: 50%;
         text-align: center;
         flex-direction: column;
         justify-content: center;
         text-decoration: none;
-        margin: 0 20px;
+        margin: 0 30px;
+
 
     }
-        a.facebook {
-        background: $red;
+    a > div{
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        filter: grayscale(80%) contrast(120%);
+        transition: all 3s;  
+        &:hover{
+            filter: grayscale(0) contrast(120%);  
+ 
+                    transition: all 0.3s;  
+        }  
+    }
+    img{
+
+
+            }
+       /* a.facebook {
         &:hover{
             background: #3A438A;
         }
     }
         a.twitter {
-        background: $orange;
         &:hover{
             background: #469AF1;
         }
     }
         a.linkedin {
-        background: $red;
         &:hover{
             background: #2F72B3;
         }
-    }
-        a.telegram{
-            margin: 0 20px;
-        }
+    } */
+
 
     
 }
-
+.emails-wrap{
+    text-align: center;
+    section{
+        width: 100%;
+    }
+}
+.sending-email-wrap p{
+    text-align: center;
+}
 i.fa-facebook{
     color: #fff;
 }
@@ -784,9 +935,7 @@ i.fa-telegram{
     color: $orange;
     font-size: 30px;
 
-    &:hover{
-        color: #499FDF;
-    }
+    
 }
 
 .social-icons {
@@ -811,9 +960,31 @@ i.fa-telegram{
 
 
 
+.back-btn {
+    display: none;
+    position: fixed; 
+    right: 50px;
+    bottom: 65px;
+    z-index: 5000; 
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    cursor: pointer;
+    color: $orange;
+    font-size: 1.6em;
+    padding-top: 7px;
+    border-radius: 50%;
+    border: 1px solid $orange;
+    outline: none;
+    &:hover{
+            background: $orange;
+            color: #fff;
+    }
+}
 
-
-
+.legal-footer {
+    text-align: center;
+}
 
 
 

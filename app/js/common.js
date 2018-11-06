@@ -15,13 +15,5 @@ $(function() {
 
     $('.slider-wrap').slick();
 
-    /* TABS */
-
-    $('.tab-link').click(function(){
-        if(!$(this).hasClass('target-link')) {
-            $('.tab-link').removeClass('target-link');
-            $(this).addClass('target-link');
-        }
-    });
 
 });

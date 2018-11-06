@@ -3,13 +3,12 @@
 @import "vars";
 
 .intro-txt {
-	font-size: 4.8rem;
+	font-size: 24px;
 	color: $red;
-	text-transform: uppercase;
-	text-align: center;
+	text-align: left;
 	font-family: $MontserratRegular;
 	border-top: 1px solid #aaa;
-	padding: 65px 0 100px 0;
+	padding: 65px 0 100px 5%;
 }
 .column-1, .column-2 {
 	width: 50%;
@@ -29,6 +28,14 @@
 		.small-box, .medium-box, .big-box {
 		-webkit-background-size: cover;
 		overflow: hidden;
+		transition: all 1s;
+		&:hover{
+			background-size: 120%;
+			.trans-bg {
+				background: rgba(0,0,0,0.1);
+				background-size: 150%
+			}
+		}
 		}
 	.small-box {
 		width: 50%;
@@ -47,7 +54,8 @@
 }
 
 .emmamason {
-	background: url(../img/portfolio/emmamason.jpg);
+	position: relative;
+	
 }
 .planet {
 	background: url(../img/portfolio/planet.jpg);
@@ -127,8 +135,7 @@
 		background-size: 50%;
 	}
 	.box-img img{
-		max-width: 70%;
-		max-height: 90%;
+
 			}
 	.link-box{
 		height: 25%;
@@ -150,6 +157,7 @@
 	}
 	a:hover{
 		background: rgba(0,0,0,0.3);
+
 	}
 
 }

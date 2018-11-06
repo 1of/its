@@ -5,7 +5,7 @@
 @media only screen and (max-width : 1300px) {
 
     .commonStyle {
-        max-width: 96%;
+        max-width: 100%;
     }
 }
 
@@ -14,7 +14,16 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+.addresses {
+    flex-direction: column;
+    section{
+        margin: auto;
+        padding-top: 20px;
+        iframe{
+            width: 95%;
+        }
+    }
+}
 }
 	/**/
 
@@ -33,18 +42,17 @@
         padding: 15px;
     }
 
-    .addresses {
-
-        section {
-            width: 49%;
-            padding-right: 0;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
+.addresses {
+    flex-direction: column;
+    section{
+        margin: auto;
+        padding-top: 20px;
+        width: 100%;
+        iframe{
+            width: 95%;
         }
     }
+}
 
     .sending-email-wrap {
 
@@ -151,6 +159,28 @@
             margin-left: 4%;
         }
     }
+
+    .top-header-content{
+        justify-content: space-around;
+        p{
+            span{
+                display: inline-block;
+                text-align: center;
+                font-size: 13px;
+                .email{
+                    font-size: 10px;
+                }
+            }
+        }
+        p.email span, p.phone span{
+            font-size: 12px;
+        }
+        p a{
+            font-size: 13px;
+        }
+    }
+
+
 }
 
 @media only screen and (max-width : 850px) {
@@ -158,6 +188,26 @@
     .dev-items-wrap li {
         width: 343px;
     }
+        .top-header-content{
+        justify-content: space-around;
+        p.skype{
+            font-size: 12px;
+        }
+    }
+
+.slider-text-box .slider-logos{
+    width: 180px;
+}
+
+    .slider-text-box > div:last-child{
+        margin-left: 0;
+
+    }
+
+    .czech{
+        margin-top: 50px;
+    }
+
 }
 
 
@@ -178,14 +228,7 @@
         display: block;
     }
 
-    .top-header-content {
 
-        justify-content: space-between;
-
-        p * {
-            font-size: 15px;
-        }
-    }
 
     .header-content {
 
@@ -219,12 +262,12 @@
             right: 2%;
         }
         .slick-slide img{
-            height: 55vh !important;
+            height: 40vh;
         }
 
     }
     .slider-container{
-        height: 55vh !important;
+        height: 40vh;
     }
 
     .main-menu {
@@ -317,12 +360,13 @@
     }
 
     .commonStyle {
-        max-width: 92%;
+        max-width: 100%;
     }
 
     .tab1-bg {
         background-size: cover;
-        height: 424px;
+        height: 520px;
+        margin-top: 30px;
     }
 
     .tab-link {
@@ -345,7 +389,9 @@
     .footer {
         padding: 50px 0 30px;
     }
-
+.social-link{
+    margin-right: 0;
+}
     .social-wrap {
         margin: 50px 0;
     }
@@ -358,8 +404,17 @@
     .social-link{
         margin-top: 50px;
     justify-content: center;
+    a.facebook, a.linkedin, a.twitter, a.instagram, a.telegram, a.dou{
+        margin: 0 10px;
+    }
+    a > div{
+        width: 40px;
+        height: 40px;
+    }
 }
-
+.footer-logo-wrap{
+    flex-direction: column;
+}
     .bg-facebook {
         background-position: -9px -130px;
     }
@@ -401,6 +456,34 @@
     .main-form {
         max-width: 100%;
     }
+
+    .tabs-wrap > div {
+        display: flex;
+        flex-direction: column;
+        & div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+        .tab-content{
+            padding-top: 35px;
+        }
+        p{
+            font-size: 14px;
+        }
+
+    }
+
+    .heading{
+        margin-top: 20px;
+    }
+
+        .social-link img{
+        width: 40px;
+        height: 40px;
+    }
+
 }
 @media only screen and (max-width : 650px) {
 
@@ -499,9 +582,43 @@
 
 @media only screen and (max-width : 480px) {
 
-    .top-header-content {
-        flex-direction: column;
-        align-items: end;
+    .top-header-content{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: 70px;
+        p{
+            
+            span{
+                text-align: center;
+                font-size: 14px;
+                .email{
+                    font-size: 14px;
+                }
+            }
+        }
+        p.skype{
+            margin-top: 2px;
+        }
+        p.skype span{
+            margin-left: 2%;
+        }
+        p.email span, p.phone span{
+                        margin-left: 2%;
+            font-size: 14px;
+                        text-align: center;
+        }
+        p.email{
+        }
+        p.phone{
+        }
+        p a{
+            font-size: 14px;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    .top-header-content p.skype i.fa{
+        font-size: 16px;
     }
 
     .main-menu a {
@@ -518,13 +635,59 @@
         left: auto;
         right: 0;
     }
+    .slider-text-box{
+        padding-left: 15%;
+        flex-direction: column;
+    }
+    .slider-text-box p {
+        font-size: 21px;
+    }
+    .slider-text-box .slider-logos{
+        width: 180px;
+    }
+    .wrapper{
+        padding: 0 10px;
+    }
+
+    .social-link img{
+        width: 40px;
+        height: 40px;
+    }
+    .footer-logo-wrap a{
+        width: 100%;
+    }
+    .legal-footer{
+        padding: 0 10px 10px 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .heading{
+        margin-top: 10px;
+    }
+
+    .tabs-wrap > div {
+        display: flex;
+        flex-direction: column;
+        & div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .tab-content{
+            padding-top: 35px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+
 }
 
 @media only screen and (max-width : 375px) {
 
     .heading,
     .contact-us .heading {
-        padding: 40px 0 20px;
+        padding: 5px 0 20px;
     }
 
     .contact-item-wrap section,
