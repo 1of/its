@@ -1,5 +1,8 @@
 @import "vars";
 @import "fonts";
+.head-outer{
+  height: 100px;
+}
 .header-block{
   height: 100px;
   display: flex;
@@ -11,6 +14,16 @@
     width: 20%;
     margin: auto;
     padding-left: 20px;
+    height: 100%;
+  }
+  .logo img{
+    width: auto;
+    height: 100%;
+    transition: all 0.3s;
+      -webkit-filter: drop-shadow(4px 4px 4px rgba(160,160,160,0.7));
+    &:hover{
+      -webkit-filter: drop-shadow(2px 2px 3px rgba(160,160,160,0.7));
+    }
   }
   #menu{
     display: flex;
@@ -28,6 +41,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(124, 124, 124, 0.5);
 }
 
 .sticky + .content {
@@ -132,7 +146,9 @@ span.has-subnav {
 
 /*Phones*/
  @media screen and (max-width:1000px) {
-
+.header-block .logo img {
+  height: 55%;
+}
 .header-block #menu{
   position: absolute;
   width: 100%;
@@ -178,9 +194,16 @@ a.menu-link { display: none; }
 .js .menu,  .js .menu > ul ul {
   max-height: none;
   overflow: visible;
+    
 }
+.js .menu > ul li > ul{
+  background: rgba(255,255,255,0.95);
+}
+.js .menu > ul li:hover > ul { 
+  display: flex;
+  box-shadow: -4px 26px 34px -23px rgba(0,0,0,0.75);
 
-.js .menu > ul li:hover > ul { display: flex; }
+   }
 
 .menu ul {
   display: flex;

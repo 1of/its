@@ -45,9 +45,11 @@
                     </div>
                     </div>
                     <!-- HEADER responce-->
+                    <div class="head-outer">
+
                     <div class="header-block" id="heading">
                         <div class="logo">
-                            <a href="index.html"><img src="img/logo.png" alt="Intechsoft"></a>
+                        <a href="index.html"><img src="img/logo_main.svg" alt="Intechsoft"></a>
                             <a href="#menu" class="menu-link active"><span> <i class="fa fa-bars"></i> </span></a>
                         </div>
                         <nav id="menu" class="menu">
@@ -62,12 +64,14 @@
                                     </ul>
                                 </li>
                                 <li><a href="portfolio.html">portfolio</a></li>
-                                <li><a href="carrier.html">carrier</a></li>
+                                <li><a href="career.html">career</a></li>
                                 <li><a href="outstaffing.html">outstaffing</a></li>
                                 <li class="active"><a href="contact-us.html">contact us</a></li>
                             </ul>
                         </nav>
                     </div>
+
+                </div>
                     <!-- END HEADER responce-->
                 </header>
                 <div class="banner-contact-us">
@@ -80,8 +84,7 @@
                     <div class="addresses">
                         <section>
                             <h1 class="visuallyHidden">kharkiv address</h1>
-                            <p>Kharkiv, Ukraine,</p>
-                            <p>61051,</p>
+                            <p>Kharkiv, Ukraine, 61051,</p>
                             <p>Koneva Street, 4</p>
                             <iframe src="https://www.google.com/maps?q=ул.+Конева,+4,+Харьков,+Харьковская+область,+61000&output=embed"  height="450"></iframe>
                                             
@@ -89,9 +92,9 @@
                         </section>
                         <section>
                             <h1 class="visuallyHidden">praha address</h1>
-                            <p>Praha 8, Czech Republic,</p>
-                            <p>18000, N</p>
-                            <p>A ZERTVACH 2230/44</p>
+                            <p>Praha 8, Czech Republic, 18000, </p>
+                            <p>NA ZERTVACH 2230/44</p>
+                            
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.9942829048455!2d14.476840815718909!3d50.10511397942913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470becaccd50bd99%3A0x5d76ee047cf1048!2zTmEgxb1lcnR2w6FjaCAyMjMwLzQ0LCAxODAgMDAgUHJhaGEgOC1MaWJlxYgsINCn0LXRhdC40Y8!5e0!3m2!1sru!2sua!4v1541145191061"  height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </section>
                     </div>
@@ -103,16 +106,17 @@
                             <p>business department<span>cmo@intechsoft.net</span></p>
                             <p>hr department<span>hr@intechsoft.net</span></p>
                         </section>
-                 <!--       <section>
-                            <form action="" class="main-form" id="id-main-form">
+                        <section>
+                            <form action="" class="main-form" id="contact-form">
                                 <div class="form-control">
-                                    <input type="text" name="name" placeholder="Name" required>
-                                    <input type="email" name="email" placeholder="Email" size="30" required>
+                                    <input type="text" id="name" name="name" placeholder="Name" required>
+                                    <input type="email" id="email" name="email" placeholder="Email" size="30" required>
                                 </div>
-                                <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                                <input type="submit" value="send">
+                                <textarea id="msg" name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                <p id="warning"></p>
+                                <input type="submit" id="send-contact-btn" value="send">
                             </form>
-                        </section> -->
+                        </section> 
                     </div>
                 </div>
             </div>
@@ -120,11 +124,11 @@
                 <div class="wrapper footer-logo-wrap">
                     <a href="index.html"><img src="img/logo-bigger.png" alt="Intechsoft"></a>
                     <div class="social-link">
-                        <a href="https://www.facebook.com/Intechsoft.net/" class="facebook"><div><img src="img/social_03.png" alt="facebook"></div></a>
-                        <a href="http://jobs.dou.ua/companies/intechsoft/" class="dou"><div><img src="img/social_05.png" alt="dou"></div></a>
-                        <a href="https://www.linkedin.com/company/intechsoft" class="linkedin"><div><img src="img/social_07.png" alt="linkedin"></div></a>
-                        <a href="https://t.me/Intechsoft" class="telegram"><div><img src="img/social_09.png" alt="telegram"></div></a>
-                        <a href="https://www.instagram.com/intechsoft_co/" class="instagram"><div><img src="img/social_11.png" alt="instagram"></div></div></a>
+                        <a target="_blank" href="https://www.facebook.com/Intechsoft.net/" class="facebook"><div><img src="img/social_03.png" alt=""></div></a>
+                        <a target="_blank" href="http://jobs.dou.ua/companies/intechsoft/" class="dou"><div><img src="img/social_05.png" alt=""></div></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/intechsoft" class="linkedin"><div><img src="img/social_07.png" alt=""></div></a>
+                        <a target="_blank" href="https://t.me/Intechsoft" class="dou"><div><img src="img/social_09.png" alt=""></div></a>
+                        <a target="_blank" href="https://www.instagram.com/intechsoft_co/" class="instagram"><div><img src="img/social_11.png" alt=""></div></div></a>
                     </div>
                 </div>
                 <div class="legal-footer">
@@ -138,6 +142,60 @@
 
         <script src="js/scripts.min.js"></script>
         <script src="js/toggle-nav.js"></script>
+        <script>
+//form send click
+        $('#send-contact-btn').on('click', function(e){
+              $( "#warning" ).text('');        
+        });
+//form submit
+        $('#contact-form').on('submit', function(event){
+           event.preventDefault();
+
+          $( "#warning" ).text('');
+
+           var name = $('#name').val();
+           var email = $('#email').val();
+           var msg = $('#msg').val();
+//if numbers in name field -> return
+           var hasDigit = /[0-9]/.test(name);
+
+           if (hasDigit || name.length < 2) {
+              $( "#warning" ).text( "Please, enter a valid name..." ).css({'color' : 'crimson'});;      
+              return    
+           }
+            if (msg.length < 2) {
+              $( "#warning" ).text( "Please, type your message..." ).css({'color' : 'crimson'});;      
+              return    
+           }
+
+//ajax to google-forms
+             $.ajax({
+                   url: "https://docs.google.com/forms/d/e/1FAIpQLSeK0Fm2qtm_wh2PTNQFU-WkK6J1OOWp7O-R1VGGmtZO8Peyug/formResponse",
+                   data: {"entry.1139703929": name, "emailAddress": email, "entry.38433389": msg},
+                   type: "POST",
+                   dataType: "xml",
+                   statusCode: {
+                       200: function (responce) {
+                               //Success message           
+                                $('#name').val('');
+                                $('#email').val('');
+                                $('#msg').val('');
+                                //$('#modalSubmit').modal('show');
+                                $( "#warning" ).text( "Thank you! We will reply as soon as possible" ).css({'color' : '#228B22'});;
+                                return
+
+                           }, 
+                           400: function (responce) {
+                               //Success message
+                                $( "#warning" ).text( "Enter a valid email..." ).css({ 'color' : 'crimson'});
+                                return                                        
+                           }
+                       }
+
+                   });
+ 
+});
+        </script>
     </body>
 </html>
 

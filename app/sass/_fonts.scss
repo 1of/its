@@ -62,6 +62,22 @@
     font-style: normal;
 }
 
+/* Raleway */
+
+@font-face{
+    font-family: $RalewayRegular;
+    src: url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: $RalewaySemibold;
+    src: url('../fonts/Raleway/$Raleway-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* FontAwesome for Icons */
 
 @font-face {

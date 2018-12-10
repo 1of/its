@@ -37,10 +37,14 @@ var sticky = header.offsetTop;
 
 function myFunction() {
 	scrollFunc();
-  if (window.pageYOffset > sticky) {
-
+  if (window.pageYOffset > sticky+100) {
     header.classList.add("sticky");
+    header.classList.add("animated");
+    header.classList.add("slideInDown");
+
   } else {
+    header.classList.remove("animated");
+    header.classList.remove("slideInDown");
     header.classList.remove("sticky");
   }
 }
@@ -57,6 +61,6 @@ var scrollFunc = function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document	 
 	$("#topBtn").on('click', function() {
-      var top = $('head').offset().top;
-      $('body,html').animate({scrollTop: top}, 1500);
+      var top = $('.header').offset().top;
+      $('body,html').animate({scrollTop: top}, 1200);
 	});

@@ -30,10 +30,9 @@
 		overflow: hidden;
 		transition: all 1s;
 		&:hover{
-			background-size: 120%;
 			.trans-bg {
 				background: rgba(0,0,0,0.1);
-				background-size: 150%
+				transform: scale(1.1);
 			}
 		}
 		}
@@ -54,8 +53,7 @@
 }
 
 .emmamason {
-	position: relative;
-	
+	background: url(../img/portfolio/emmamason.jpg);
 }
 .planet {
 	background: url(../img/portfolio/planet.jpg);
@@ -135,7 +133,8 @@
 		background-size: 50%;
 	}
 	.box-img img{
-
+		max-width: 70%;
+		max-height: 90%;
 			}
 	.link-box{
 		height: 25%;
@@ -157,7 +156,6 @@
 	}
 	a:hover{
 		background: rgba(0,0,0,0.3);
-
 	}
 
 }

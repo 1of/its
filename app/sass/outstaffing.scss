@@ -4,6 +4,7 @@
 
 .header-img{
 	width: 100%;
+	box-shadow: -4px 25px 60px -31px rgba(0,0,0,0.7);
 	.transparent-block{
 		background: rgba(0,0,0,0.5);
 		height: 100%;
@@ -65,7 +66,7 @@
 		background-position: center;
 	}
 .main-text{
-	font-family: $ACaslonPro-Regular;
+	font-family: $RalewayRegular;
 	font-size: 21px;
 	max-width: 1170px;
 	margin: auto;
@@ -75,15 +76,15 @@
 	}
 	p.accent{
 		padding-top: 90px;
-		font-family: $ACaslonProSemibold;
+		font-family: $RalewayRegular;
 	}
 	p.accent-0{
 		padding-top: 10px;
-		font-family: $ACaslonProSemibold;
+		font-family: $RalewayRegular;
 	}
 	p.accent-support{
 		padding-top: 70px;
-		font-family: $ACaslonPro-Regular;
+		font-family: $RalewaySemibold;
 	}
 	p:not(:first-child){
 		padding-bottom: 40px;
@@ -94,7 +95,7 @@
 		li{
 			padding-bottom: 15px;
 			font-weight: bold;
-			font-family: $ACaslonProSemibold;
+			font-family: $RalewayRegular;
 		}
 	}
 	i.fa{
@@ -104,7 +105,7 @@
 	}
 	h2{
 		font-size: 24px;
-		padding-left: 80px;
+		padding-left: 10px;
 		text-align: left;
 		color: $red;
 		font-family: $MontserratRegular;
@@ -211,9 +212,10 @@ i.fa-close{
         background: #fff;
         transition: all 0.3s;
         &:hover{
-        	-webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
-		-moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
-		box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
+	        -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
+			-moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
+			box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
+
 
         }
 
@@ -226,8 +228,10 @@ i.fa-close{
             color: #fff;
             background: $orange;
             padding: 7px 27px;
+			box-shadow: 5px 8px 10px -3px rgba(219,219,219,1);
             &:hover{
             	background: $red;
+				box-shadow: 4px 6px 10px -3px rgba(219,219,219,1);
             }
         }
     }

@@ -25,6 +25,7 @@
   },
   "author": "",
   "dependencies": {
+    "natives": "^1.1.6",
     "node-sass": "^4.9.3"
   }
 }

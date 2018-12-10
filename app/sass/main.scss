@@ -219,6 +219,8 @@ textarea:focus {
     height: 40vh;
     overflow: hidden;
 
+    box-shadow: -4px 25px 78px -31px rgba(0,0,0,0.7);
+
 }
 .slick-track{
     height: 40vh;
@@ -359,7 +361,7 @@ div.slide > div{
 .development-wrap {
 
     & > p {
-        font: 21px/1.2 $ACaslonPro-Regular;
+        font: 21px/1.2 $RalewayRegular;
         margin-bottom: 30px;
         text-indent: 35px;
     }
@@ -456,7 +458,7 @@ div.slide > div{
         margin: 15px 0 10px;
 
         & + p {
-            font: 18px $ACaslonPro-Regular;
+            font: 18px $RalewayRegular;
             margin-bottom: 30px;
             overflow: hidden;
         }
@@ -494,6 +496,7 @@ div.slide > div{
         padding: 40px;
         text-align: center;
         margin-bottom: 20px;
+        box-shadow: 0px 0px 9px 3px rgba(219,219,219,1);
     }
 
     .text-wrap {
@@ -511,7 +514,7 @@ div.slide > div{
         }
 
         & span:last-of-type {
-            font-family: $ACaslonPro-Regular;
+            font-family: $RalewayRegular;
         }
 
         & a{
@@ -553,7 +556,6 @@ div.slide > div{
 /* OUR OFFICES SECTION */
 
 .offices-wrap {
-
     .heading {
         text-align: left;
     }
@@ -566,6 +568,7 @@ div.slide > div{
     height: 628px;
     position: relative;
     padding: 50px 5%;
+    box-shadow: 0px 0px 77px -27px rgba(0,0,0,0.75);
 
     &::before {
         background: $black-opacity;
@@ -747,6 +750,14 @@ div.slide > div{
     p:first-of-type {
         margin-bottom: 50px;
     }
+    p#warning{
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        background: rgba(0,0,0,0.05);
+
+    }
 
     span {
         display: block;
@@ -808,6 +819,14 @@ div.slide > div{
         padding: 8px 3%;
         text-align: center;
         text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.5s ease-in;
+                    box-shadow: 0px 12px 10px -5px rgba(0,0,0,0.7);
+        &:hover{
+            background: red;      
+            border-radius: 3px;  
+
+        }
     }
 }
 
@@ -837,7 +856,9 @@ div.slide > div{
         padding: 50px 0 30px;
     }
 }
-
+.footer-logo-wrap > a {
+    margin-top: 20px;
+}
 .footer-logo-wrap {
     margin-bottom: 80px;
     display: flex;
@@ -846,6 +867,9 @@ div.slide > div{
     a {
         display: inline-block;
         width: 30%;
+        img{
+            height: 77%;
+        }
     }
 }
 
@@ -861,6 +885,7 @@ div.slide > div{
      align-items: center;
      margin-right: 30%;
 
+
         a.facebook, a.linkedin, a.twitter, a.instagram, a.telegram, a.dou {
         display: flex;
         margin: 0 auto;
@@ -872,24 +897,53 @@ div.slide > div{
         justify-content: center;
         text-decoration: none;
         margin: 0 30px;
+        color: $black2;
 
+        text-align: center;       
+        transition: all 0.3s;
 
     }
+    a.facebook:hover, a.linkedin:hover, a.instagram:hover{
+        color: #fff;
+        box-shadow: 0px 0px 10px -27px rgba(0,0,0,0.75);
+    }
+    a.dou:hover{
+        color: #fff;
+
+    }
+    a.twitter:hover{
+        color: $orange;
+
+    }
+    i.fa-telegram{
+        }
     a > div{
-        height: 55px;
-        width: 55px;
         border-radius: 50%;
         background-size: cover;
         background-repeat: no-repeat;
 
+        display: flex;
         filter: grayscale(80%) contrast(120%);
-        transition: all 3s;  
+        transition: all 0.3s;
+        
         &:hover{
-            filter: grayscale(0) contrast(120%);  
+           filter: grayscale(0) contrast(120%); 
  
-                    transition: all 0.3s;  
+                   
         }  
+        i{
+            font-size: 2rem;
+            margin: auto;
+        }
+        .dou-txt{
+            margin: auto;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 18px;
+            user-select: none;
+        }
     }
+
     img{
 
 
@@ -911,6 +965,7 @@ div.slide > div{
     } */
 
 
+
     
 }
 .emails-wrap{
@@ -923,17 +978,17 @@ div.slide > div{
     text-align: center;
 }
 i.fa-facebook{
-    color: #fff;
+    
 }
 i.fa-twitter{
-    color: #fff;
+    
 }
 i.fa-linkedin{
-    color: #fff;
+    
 }
 i.fa-telegram{
-    color: $orange;
-    font-size: 30px;
+    
+    
 
     
 }
@@ -984,6 +1039,8 @@ i.fa-telegram{
 
 .legal-footer {
     text-align: center;
+   padding-bottom: 20px;
+   text-transform: uppercase;
 }
 
 
