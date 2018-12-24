@@ -71,6 +71,7 @@ textarea:focus {
 .wrapper {
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .commonStyle {
@@ -357,6 +358,85 @@ div.slide > div{
     }
 }
 /* DEVELOPMENT SECTION */
+
+.development-wrap {
+
+    & > p {
+        font: 21px/1.2 $RalewayRegular;
+        margin-bottom: 30px;
+        text-indent: 35px;
+    }
+}
+.link-orange {
+    color: #fff;
+    font-size: 18px;
+    font-family: $MontserratSemibold;
+    margin: 0 auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: $orange;
+    padding: 7px 2px 6px 2px;
+    text-align: center;
+    width: 90%;
+    border: 1px solid lightgray;
+    -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.75);
+}
+.services-all {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    .single-service-block {
+        border: 1px solid #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        min-width: 355px;
+        margin-bottom: 20px;
+        h3 {
+            font: 18px $MontserratSemibold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        hr {
+            display: block;
+            height: 2px;
+            margin-top: 20px;
+            color: $red;
+            background-color: $red;
+            border-color: $red;
+        }
+        p {
+            font: 600 18px $RalewaySemibold;
+            margin: 20px 0;
+            text-align: center;
+        }
+        ul {
+            list-style: none
+        }
+        li {
+            font: 16px $RalewayRegular;
+            padding-bottom: 10px;
+        }
+        li::before {
+            content: "●";
+            padding-right: 7px;
+            font-size: 0.7rem;
+            color: $red;
+        }
+        a.link-orange {
+            margin-top: auto;
+        }
+
+        & :last-child {
+            margin-bottom: 20px;
+        }
+    }
+
+}
 
 .development-wrap {
 
