@@ -680,6 +680,12 @@
             font-size: 14px;
         }
     }
+    .offices-wrap .heading {
+        padding-bottom: 0;
+    }
+    .footer-logo-wrap {
+        margin-bottom: -40px;
+    }
 
 }
 
@@ -697,6 +703,11 @@
 
     .banner-contact-us {
         padding: 11% 0;
+    }
+    .services-all {
+        .single-service-block{
+            min-width: 300px;
+        }
     }
 }
 

@@ -2,6 +2,8 @@
 @import "fonts";
 .head-outer{
   height: 100px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(124,124,124,.5);
+  box-shadow: 0 2px 4px 0 rgba(124,124,124,.5);
 }
 .header-block{
   height: 100px;
