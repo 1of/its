@@ -69,7 +69,7 @@ textarea:focus {
 }
 
 .wrapper {
-    max-width: 1400px;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -365,6 +365,7 @@ div.slide > div{
     & > p {
         font: 21px/1.2 $RalewayRegular;
         margin-bottom: 30px;
+        margin-top: 60px;
         text-indent: 35px;
     }
 }
@@ -397,6 +398,7 @@ div.slide > div{
         padding: 20px;
         min-width: 355px;
         margin-bottom: 20px;
+        transition: all 0.3s;
         h3 {
             font: 18px $MontserratSemibold;
             text-transform: uppercase;
@@ -440,6 +442,11 @@ div.slide > div{
         & :last-child {
             margin-bottom: 20px;
         }
+        &:hover { 
+            -webkit-box-shadow: 0 0 9px 3px #dbdbdb;
+            -moz-box-shadow: 0 0 9px 3px #dbdbdb;
+            box-shadow: 0 0 9px 3px #dbdbdb;
+        };
     }
 
 }
@@ -970,7 +977,7 @@ div.slide > div{
 .social-link{       
      display: flex;
      align-items: center;
-     margin-right: 30%;
+     margin-right: 20%;
 
 
         a.facebook, a.linkedin, a.twitter, a.instagram, a.telegram, a.dou {
