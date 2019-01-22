@@ -183,6 +183,15 @@
 
 }
 
+
+@media only screen and (max-width : 860px) and (orientation: landscape) {
+
+    .slider-text-box>div.slider-logos_2 {
+        position: absolute;
+        bottom: -35px;
+    }
+}
+
 @media only screen and (max-width : 850px) {
 
     .dev-items-wrap li {
@@ -194,15 +203,23 @@
             font-size: 12px;
         }
     }
+    .slider-text-box .slider-logos{
+        width: 180px;
+        position: unset;
+    }
 
-.slider-text-box .slider-logos{
-    width: 180px;
-}
+    .slider-text-box .slider-logos_2 {
+        position: unset;
+    }
 
     .slider-text-box > div:last-child{
+        background-size: contain;
         margin-left: 0;
+        height: 12vh;
+        margin: auto;
 
     }
+
 
     .czech{
         margin-top: 50px;
@@ -636,14 +653,18 @@
         right: 0;
     }
     .slider-text-box{
-        padding-left: 15%;
+        padding: 15% 70px 0;
+        text-align: center;
         flex-direction: column;
     }
     .slider-text-box p {
-        font-size: 21px;
+        font-size: 18px;
     }
     .slider-text-box .slider-logos{
         width: 180px;
+        background-size: contain;
+        background-position: 40%;
+        margin-left: 0;
     }
     .wrapper{
         padding: 0 10px;
