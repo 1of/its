@@ -106,8 +106,9 @@
                             <p>business department<span>cmo@intechsoft.net</span></p>
                             <p>hr department<span>hr@intechsoft.net</span></p>
                         </section>
+                        <script src="https://www.google.com/recaptcha/api.js?render=6LcrUdoUAAAAANbasWPO-gFkSPe7swPpYQCvSn6O" async defer></script>
                         <section>
-                            <form action="" class="main-form" id="contact-form">
+                            <form action="?" class="main-form" id="contact-form" method="POST">
                                 <div class="form-control">
                                     <input type="text" id="name" name="name" placeholder="Name" required>
                                     <input type="email" id="email" name="email" placeholder="Email" size="30" required>
@@ -142,60 +143,16 @@
 
         <script src="js/scripts.min.js"></script>
         <script src="js/toggle-nav.js"></script>
+        <script src="js/form-submit.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6LcrUdoUAAAAANbasWPO-gFkSPe7swPpYQCvSn6O"></script>
         <script>
-//form send click
-        $('#send-contact-btn').on('click', function(e){
-              $( "#warning" ).text('');        
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LcrUdoUAAAAANbasWPO-gFkSPe7swPpYQCvSn6O', {action: 'contact-us'}).then(function(token) {
+            
+            });
         });
-//form submit
-        $('#contact-form').on('submit', function(event){
-           event.preventDefault();
-
-          $( "#warning" ).text('');
-
-           var name = $('#name').val();
-           var email = $('#email').val();
-           var msg = $('#msg').val();
-//if numbers in name field -> return
-           var hasDigit = /[0-9]/.test(name);
-
-           if (hasDigit || name.length < 2) {
-              $( "#warning" ).text( "Please, enter a valid name..." ).css({'color' : 'crimson'});;      
-              return    
-           }
-            if (msg.length < 2) {
-              $( "#warning" ).text( "Please, type your message..." ).css({'color' : 'crimson'});;      
-              return    
-           }
-
-//ajax to google-forms
-             $.ajax({
-                   url: "https://docs.google.com/forms/d/e/1FAIpQLSeK0Fm2qtm_wh2PTNQFU-WkK6J1OOWp7O-R1VGGmtZO8Peyug/formResponse",
-                   data: {"entry.1139703929": name, "emailAddress": email, "entry.38433389": msg},
-                   type: "POST",
-                   dataType: "xml",
-                   statusCode: {
-                       200: function (responce) {
-                               //Success message           
-                                $('#name').val('');
-                                $('#email').val('');
-                                $('#msg').val('');
-                                //$('#modalSubmit').modal('show');
-                                $( "#warning" ).text( "Thank you! We will reply as soon as possible" ).css({'color' : '#228B22'});;
-                                return
-
-                           }, 
-                           400: function (responce) {
-                               //Success message
-                                $( "#warning" ).text( "Enter a valid email..." ).css({ 'color' : 'crimson'});
-                                return                                        
-                           }
-                       }
-
-                   });
- 
-});
         </script>
+        
     </body>
 </html>
 
