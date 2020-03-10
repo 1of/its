@@ -1,159 +1,158 @@
-@import "fonts";
-@import "libs";
-@import "vars";
+@import 'fonts';
+@import 'libs';
+@import 'vars';
 
-.header-img{
-	width: 100%;
-	box-shadow: -4px 25px 60px -31px rgba(0,0,0,0.7);
-	.transparent-block{
-		background: rgba(0,0,0,0.5);
-		height: 100%;
-		width: 100%;
-		display: flex;
-		h1 {
-			margin: auto;
-			color: #fff;
-			font-family: $MontserratSemibold;
-			font-size: 60px;
-			text-transform: uppercase;
-			padding: 10% 0;
-			text-align: center;
-
-		}
-	}
+.header-img {
+    width: 100%;
+    box-shadow: -4px 25px 60px -31px rgba(0, 0, 0, 0.7);
+    .transparent-block {
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        h1 {
+            margin: auto;
+            color: #fff;
+            font-family: $MontserratSemibold;
+            font-size: 60px;
+            text-transform: uppercase;
+            padding: 10% 0;
+            text-align: center;
+        }
+    }
 }
-.outstuf-photo{
-		background: url('../img/outstaffing/outstaffing.jpg');
-		-webkit-background-size: cover;
-		background-size: cover;
-	}
-.support-photo{
-		background: url('../img/services/magento_support.jpg');
-		-webkit-background-size: cover;
-		background-size: cover;
-	}
-.migration-photo{
-		background: url('../img/services/magento_migration.jpg');
-		-webkit-background-size: cover;
-		background-size: cover;
-	}
-.hosting-photo{
-		background: url('../img/services/magento_hosting.jpg');
-		-webkit-background-size: cover;
-		background-size: cover;
-	}
-.extention-dev-photo{
-		background: url('../img/services/magento_extension_dev.jpg');
-		-webkit-background-size: cover;
-		background-size: cover;
-	}
-.development-photo{
-		background: url('../img/services/magento_development.jpg');
-		-webkit-background-size: cover;
-		background-size: cover;
-		background-position: center;
-	}
-.desighn-photo{
-		background: url('../img/services/magento_design.jpg');
-		-webkit-background-size: cover;
-		background-size: cover;
-		background-position: center;
-	}
-.vacansy-photo{
-		background: url('../img/vacansy.jpg');
-		-webkit-background-size: cover;
-		background-size: cover;
-		background-position: center;
-	}
-.main-text{
-	font-family: $RalewayRegular;
-	font-size: 21px;
-	margin: auto;
-	p:first-child{	
-		padding-bottom: 20px;
-		line-height: 1.2;
-	}
-	p.accent{
-		padding-top: 90px;
-		font-family: $RalewayRegular;
-	}
-	p.accent-0{
-		padding-top: 10px;
-		font-family: $RalewayRegular;
-	}
-	p.accent-support{
-		padding-top: 70px;
-		font-family: $RalewaySemibold;
-	}
-	p:not(:first-child){
-		padding-bottom: 40px;
-		line-height: 1.2;
-	}
-	ul{
-		margin: 20px 0;
-		li{
-			padding-bottom: 15px;
-			font-weight: bold;
-			font-family: $RalewayRegular;
-		}
-	}
-	i.fa{
-		color: $red;
-		margin-right: 45px;
-		font-weight: 200;
-	}
-	h2{
-		font-size: 24px;
-		padding-left: 10px;
-		text-align: left;
-		color: $red;
-		font-family: $MontserratRegular;
-		text-transform: uppercase;
-		&:first-child{
-			margin-top: 50px;
-		}
-	}
-	h2.centered-txt{
-		padding-left: 0;
-		padding-bottom: 50px;
-	}
-	.hosting-list li{
-		display: flex;
-		i.fa{
-			font-size: 3rem;
-			padding-top: 5px;
-		}
-		p{
-			font-weight: normal;
-		}
-	}
-	.hosting-list li span{
-		display: block;
-		text-shadow: 1px 1px #000;
-		font-size: 22px;
-	}
-	a{
-		text-decoration: none;
-		color: $orange;
-	}
-	li.dev-list {
-		i.fa{
-			margin-right: 15px;
-		}
-	}
+.outstuf-photo {
+    background: url('../img/outstaffing/outstaffing.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.support-photo {
+    background: url('../img/services/magento_support.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.migration-photo {
+    background: url('../img/services/magento_migration.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.hosting-photo {
+    background: url('../img/services/magento_hosting.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.extention-dev-photo {
+    background: url('../img/services/magento_extension_dev.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.development-photo {
+    background: url('../img/services/magento_development.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.desighn-photo {
+    background: url('../img/services/magento_design.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.vacansy-photo {
+    background: url('../img/vacansy.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.main-text {
+    font-family: $RalewayRegular;
+    font-size: 21px;
+    margin: auto;
+    p:first-child {
+        padding-bottom: 20px;
+        line-height: 1.2;
+    }
+    p.accent {
+        padding-top: 90px;
+        font-family: $RalewayRegular;
+    }
+    p.accent-0 {
+        padding-top: 10px;
+        font-family: $RalewayRegular;
+    }
+    p.accent-support {
+        padding-top: 70px;
+        font-family: $RalewaySemibold;
+    }
+    p:not(:first-child) {
+        padding-bottom: 40px;
+        line-height: 1.2;
+    }
+    ul {
+        margin: 20px 0;
+        li {
+            padding-bottom: 15px;
+            font-weight: bold;
+            font-family: $RalewayRegular;
+        }
+    }
+    i.fa {
+        color: $red;
+        margin-right: 45px;
+        font-weight: 200;
+    }
+    h2 {
+        font-size: 24px;
+        padding-left: 10px;
+        text-align: left;
+        color: $red;
+        font-family: $MontserratRegular;
+        text-transform: uppercase;
+        &:first-child {
+            margin-top: 50px;
+        }
+    }
+    h2.centered-txt {
+        padding-left: 0;
+        padding-bottom: 50px;
+    }
+    .hosting-list li {
+        display: flex;
+        i.fa {
+            font-size: 3rem;
+            padding-top: 5px;
+        }
+        p {
+            font-weight: normal;
+        }
+    }
+    .hosting-list li span {
+        display: block;
+        text-shadow: 1px 1px #000;
+        font-size: 22px;
+    }
+    a {
+        text-decoration: none;
+        color: $orange;
+    }
+    li.dev-list {
+        i.fa {
+            margin-right: 15px;
+        }
+    }
 }
 
 /*SHOW & HIDE Vacansy description*/
 .hide {
-    display: none; 
+    display: none;
 }
-.hide + label ~ div{
+.hide + label ~ div {
     display: none;
 }
 /* оформляем текст label */
 .hide + label {
     cursor: pointer;
-    display: inline-block; 
+    display: inline-block;
 }
 /* вид текста label при активном переключателе */
 .hide:checked + label {
@@ -168,29 +167,32 @@
     margin-top: 10vh;
     height: 100%;
     top: 0;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     left: 0;
     right: 0;
-    padding: 10% 25%; 
+    padding: 10% 25%;
     z-index: 2000;
-    background: linear-gradient(180deg, rgba(255, 255, 255,0.9) 10%, rgba(255,255,255,0.8) 80%), url('../img/vacansy.jpg');
+    background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.9) 10%,
+            rgba(255, 255, 255, 0.8) 80%
+        ),
+        url('../img/vacansy.jpg');
     overflow: scroll;
 }
-i.fa-close{
-	font-size: 3.5rem;
-	position: absolute;
-	right: 5%;
-	top: 5%;
-	&:hover{
-
-	}
+i.fa-close {
+    font-size: 3.5rem;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    &:hover {
+    }
 }
-.vacansy-items-wrap li:hover{
-	height: 299px;
-
+.vacansy-items-wrap li:hover {
+    height: 299px;
 }
-.services-block{
-	position: relative;
+.services-block {
+    position: relative;
 }
 /* ======== Carrier ========= */
 .vacansy-items-wrap {
@@ -212,12 +214,10 @@ i.fa-close{
         margin-bottom: 20px;
         background: #fff;
         transition: all 0.3s;
-        &:hover{
-	        -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
-			-moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
-			box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.7);
-
-
+        &:hover {
+            -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.7);
+            -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.7);
+            box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.7);
         }
 
         & > a {
@@ -229,10 +229,10 @@ i.fa-close{
             color: #fff;
             background: $orange;
             padding: 7px 27px;
-			box-shadow: 5px 8px 10px -3px rgba(219,219,219,1);
-            &:hover{
-            	background: $red;
-				box-shadow: 4px 6px 10px -3px rgba(219,219,219,1);
+            box-shadow: 5px 8px 10px -3px rgba(219, 219, 219, 1);
+            &:hover {
+                background: $red;
+                box-shadow: 4px 6px 10px -3px rgba(219, 219, 219, 1);
             }
         }
     }
@@ -241,189 +241,156 @@ i.fa-close{
         background-repeat: no-repeat;
         display: inline-block;
     }
-    .vacansy-header{
-    	height: 70px;
-    	display: flex;
-    	text-align: left;
-    	span{
-    		text-align: left;
-    	}
-    	.vacansy-name{
-    		padding-top: 20px;
-    		margin-left: 20px;
-    		font-family: $MontserratSemibold;
-    		font-size: 18px;
-    	}
+    .vacansy-header {
+        height: 70px;
+        display: flex;
+        text-align: left;
+        span {
+            text-align: left;
+        }
+        .vacansy-name {
+            padding-top: 20px;
+            margin-left: 20px;
+            font-family: $MontserratSemibold;
+            font-size: 18px;
+        }
     }
-    .vacansy-description{
-    	height: 150px;
-    	margin-top: 10px;
-    	overflow: hidden;
-    	text-align: left;
-    	label{
-        color: $gray-solid;
-        font: 14px $MontserratRegular;
-    	}
+    .vacansy-description {
+        height: 150px;
+        margin-top: 10px;
+        overflow: hidden;
+        text-align: left;
+        label {
+            color: $gray-solid;
+            font: 14px $MontserratRegular;
+        }
     }
 
     .item1 {
-    	background: url('../img/net-logo-png-4.png');
-		background-size: 65px 60px;
-    	height: 60px;
-    	background-position: center;
-    	width: 85px;
+        background: url('../img/front_end.png');
+        background-size: 65px 60px;
+        height: 60px;
+        background-position: center;
+        width: 60px;
     }
 
     .item2 {
-    	background: url('../img/java_cup.svg');
-		background-size: 80px 70px;
-    	background-position: center;
+        background: url('../img/java_cup.svg');
+        background-size: 80px 70px;
+        background-position: center;
         width: 80px;
         height: 70px;
     }
     .item3 {
-    	background: url('../img/magento.svg');
-		background-size: 80px 70px;
-    	background-position: center;
+        background: url('../img/magento.svg');
+        background-size: 80px 70px;
+        background-position: center;
         width: 80px;
         height: 70px;
     }
     .item4 {
-    	background: url('../img/symfony_logo.png');
-		background-size: 43px 48px;
-		background-repeat: no-repeat;
-    	background-position: center;
+        background: url('../img/symfony_logo.png');
+        background-size: 43px 48px;
+        background-repeat: no-repeat;
+        background-position: center;
         width: 80px;
         height: 70px;
     }
-    .temporary-text{
-    	text-align: center;
+    .temporary-text {
+        text-align: center;
     }
 }
 
 /*==========  Desktop First  ==========*/
 
-@media only screen and (max-width : 1300px) {
-
+@media only screen and (max-width: 1300px) {
 }
-@media only screen and (max-width : 700px) {
-	.main-content {
-        flex-direction: column;
-    }
-	 .column-1, .column-2 {
-    	width: 100%;
-    }
-
-}
-    
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
-}
-	/**/
-
-@media only screen and (max-width : 1150px) {
-
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
-}
-
-@media only screen and (max-width : 850px) {
-
-
-}
-
-
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 767px) {
-	.header-img{
-		overflow: hidden;
-	}
-	.header-img .transparent-block h1 {
-		font-size: 40px;
-		padding: 20% 10%;
-	}
-
-}
-@media only screen and (max-width : 650px) {
-
-}
-
-@media only screen and (max-width : 580px) {
-
+@media only screen and (max-width: 700px) {
     .main-content {
         flex-direction: column;
     }
-    .intro-txt{
-    	font-size: 2.4rem;
-    } 
+    .column-1,
+    .column-2 {
+        width: 100%;
+    }
 }
 
-@media only screen and (max-width : 480px) {
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+}
+/**/
 
-
+@media only screen and (max-width: 1150px) {
 }
 
-@media only screen and (max-width : 375px) {
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+}
 
+@media only screen and (max-width: 850px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+    .header-img {
+        overflow: hidden;
+    }
+    .header-img .transparent-block h1 {
+        font-size: 40px;
+        padding: 20% 10%;
+    }
+}
+@media only screen and (max-width: 650px) {
+}
+
+@media only screen and (max-width: 580px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .intro-txt {
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 375px) {
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
+@media only screen and (max-width: 480px) {
 }
-	/**/
-
+/**/
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
+@media only screen and (max-width: 320px) {
 }
-	/**/
-
+/**/
 
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-
-
+@media only screen and (min-width: 320px) {
 }
-	/**/
-
+/**/
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
+@media only screen and (min-width: 480px) {
 }
-	/**/
-
+/**/
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
+@media only screen and (min-width: 768px) {
 }
-	/**/
-
+/**/
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
+@media only screen and (min-width: 992px) {
 }
-	/**/
-
+/**/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
+@media only screen and (min-width: 1200px) {
 }
-	/**/
+/**/
