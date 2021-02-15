@@ -124,7 +124,7 @@ textarea:focus {
     display: flex;
     justify-content: flex-end;
 
-    padding: 10px 0;
+    padding: 10px 2px;
     p {
         display: inline-block;
         margin-right: 2%;
@@ -145,6 +145,9 @@ textarea:focus {
             text-transform: uppercase;
         }
 
+    }
+     p.telegram {
+         color: $colorWhite;
     }
 
     & a {

@@ -173,10 +173,15 @@
             }
         }
         p.email span, p.phone span{
-            font-size: 12px;
+            font-size: 10px;
         }
         p a{
-            font-size: 13px;
+            font-size: 10px;
+        }
+        p.skype i.fa.fa-skype,
+        p.telegram i.fa{
+            font-size: 14px;
+            color: #fff;
         }
     }
 
@@ -199,6 +204,7 @@
     }
         .top-header-content{
         justify-content: space-around;
+        line-height: 0;
         p.skype{
             font-size: 12px;
         }
@@ -602,7 +608,7 @@
     .top-header-content{
         flex-direction: column-reverse;
         justify-content: space-around;
-        height: 70px;
+        height: 80px;
         p{
             
             span{
@@ -619,10 +625,10 @@
         p.skype span{
             margin-left: 2%;
         }
-        p.email span, p.phone span{
-                        margin-left: 2%;
+        p.email span, p.phone span, p.telegram span{
+            margin-left: 2%;
             font-size: 14px;
-                        text-align: center;
+            text-align: center;
         }
         p.email{
         }
